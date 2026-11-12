@@ -1,0 +1,41 @@
+Package: plotgardenerNeo
+Type: Package
+Title: Neo-Chromosome Plotting Extensions for plotgardener
+Version: 1.15.1.9000
+Authors@R: c(
+    person("plotgardenerNeo", "contributors", role = c("aut", "cre"),
+           email = "noreply@example.org")
+    )
+Description: Extends plotgardener 1.15.1 with neo-chromosome assembly
+    parsing, neo Hi-C reconstruction and plotting, IGV-style neo gene
+    tracks, and helpers for mapping genome-wide signal tracks into neo
+    coordinates. This package builds on the plotgardener 1.15.1 API and
+    depends on a patched plotgardener (>= 1.15.1.9000) for the core fixes
+    used by the neo functions.
+License: MIT + file LICENSE
+Encoding: UTF-8
+Depends:
+    R (>= 4.2.0),
+    plotgardener (>= 1.15.1.9000)
+Imports:
+    AnnotationDbi,
+    data.table,
+    GenomicFeatures,
+    GenomicRanges,
+    grid,
+    IRanges,
+    methods,
+    rtracklayer,
+    stats,
+    utils
+Suggests:
+    digest,
+    org.Hs.eg.db,
+    Rsamtools,
+    strawr,
+    testthat (>= 3.0.0),
+    TxDb.Hsapiens.UCSC.hg19.knownGene,
+    TxDb.Hsapiens.UCSC.hg38.knownGene,
+    withr
+Config/testthat/edition: 3
+RoxygenNote: 8.1.0
